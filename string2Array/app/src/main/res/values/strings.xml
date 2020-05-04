@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">翁翁</string>
+    <string name="test_data">Category,Subcategory,Description,Country,CCY,Amount:
+Malaysia,OCBC,Premier-Jt,MY,MYR,1375914:
+Malaysia,Kenanga,OCR-MTN,MY,MYR,1000000:
+Malaysia,UOB,Investpro,MY,MYR,516056:
+Malaysia,Kenanga,Datasonic,MY,MYR,500000:
+Malaysia,FSM,Bonds,MY,MYR,501830:
+Malaysia,UOB,FD1,MY,MYR,450000:
+Malaysia,UOB,FD2,MY,MYR,400000:
+Malaysia,UOB,FD3,MY,MYR,400000:
+Malaysia,UOB,Funds,MY,MYR,337739:
+Malaysia,RHB,FD,MY,MYR,250000:
+Malaysia,Kenanga,KYS-MTN,MY,MYR,250000:
+Malaysia,Kenanga,711-MTN,MY,MYR,250000:
+Malaysia,RHB,FD_MM2H,MY,MYR,150000:
+Malaysia,RHB,Premier-Jt,MY,MYR,149964:
+Malaysia,Plaza Condo,Condo,MY,MYR,133000:
+Malaysia,RHB,Securities-mm,MY,MYR,70628:
+Malaysia,RHB,FD-pledge,MY,MYR,50000:
+Malaysia,OCBC,CCPledgemm,MY,MYR,50000:
+Malaysia,OCBC,CCPledgeyy,MY,MYR,50000:
+Malaysia,FSM,Funds,MY,MYR,50756:
+Malaysia,RHB,TradingCashmm,MY,MYR,3526:
+Malaysia,OCBC,Premier-mm,MY,MYR,1222:
+Malaysia,RHB,BonusAccount,MY,MYR,1201:
+Malaysia,RHB,Smart-mm,MY,MYR,849:
+Malaysia,FSM,Cash,MY,MYR,752:
+Malaysia,RHB,Securities-yy,MY,MYR,500:
+Malaysia,RHB,MCA,MY,SGD,50:
+Malaysia,RHB,TradingCashyy,MY,MYR,0:
+Misc,Trading,Schwab,MY,USD,30000:
+Misc,Trading,FX Trading,MY,USD,11000:
+Switzerland,UBS,Mgd-Liquidity,CH,CHF,371443:
+Switzerland,UBS,Mgd-Securities,CH,CHF,580373:
+Switzerland,UBS,Liquidities,CH,CHF,392335:
+Switzerland,UBS,Securities,CH,CHF,233381:
+Switzerland,PFS,PFS_mm,CH,CHF,1751000:
+Switzerland,PFS,PFS_yy,CH,CHF,109868:
+Switzerland,PFS,PFS_WHT,CH,CHF,-223304:
+Canada,HSBC,SecCAD,CA,CAD,911113:
+Canada,HSBC,SecUSD,CA,USD,41888:
+Canada,HSBC,CA-HRSCAD,CA,CAD,20340:
+Canada,HSBC,CA-CashCAD,CA,CAD,8000:
+Canada,HSBC,ID-CashCAD,CA,CAD,1134:
+Canada,HSBC,ID-CashUSD,CA,USD,111:
+Canada,TD,TFSA-mm,CA,CAD,85682:
+Canada,Pension and Insurance,SDRSP-mm,CA,CAD,60417:
+Canada,TD,TFSA-yy,CA,CAD,85760:
+Canada,Pension and Insurance,SDRSP yy,CA,CAD,11837:
+Canada,TD,CashCAD,CA,CAD,11297:
+Canada,TD,CashUSD,CA,USD,5496:
+Misc,HSBC HK,HK-Securities,HK,HKD,3807704:
+Misc,HSBC HK,HK-Insurance,HK,USD,145800:
+Misc,HSBC HK,HK-cash,HK,HKD,99011:
+Misc,HSBC China,China-mm,HK,CNY,309770:
+Misc,HSBC China,China-yy,HK,CNY,87969:
+UK,Charlton,ElliscombeRd,UK,GBP,700000:
+Family,Markus,Cowgatehead,Misc,GBP,180000:
+Family,Markus,Barcays-SO,Misc,GBP,3000:
+Family,Markus,Inher_18/19,Misc,CAD,-100000:
+Misc,Pension and Insurance,Ultimate,UK,GBP,55914:
+UK,Pension and Insurance,Ultimate,UK,GBP,36639:
+UK,Misc,Barclays,UK,GBP,25470:
+UK,Misc,NSIncomeBonds,UK,GBP,7000:
+UK,Pension and Insurance,CanadaLife,UK,GBP,6000:
+Misc,Trading,Kraken_mm,Misc,USD,10453:
+Misc,Trading,Kraken_yy,Misc,CAD,19143:
+Family,Philip,TokyoHouse,Misc,JPY,39000000:
+Family,Philip,MTBC-Cash,Misc,JPY,1000000:
+Family,Philip,USD-loan,Misc,USD,50000:
+Family,Philip,Inher_18/19,Misc,CAD,-100000:
+
+
+</string>
+    <string name="inifxString">"CAD":1.0,
+        "HKD":5.5167732156,"ISK":104.5277796085,
+        "PHP":36.1767613524,"DKK":4.9151123707,
+        "HUF":234.0934554801,"CZK":17.9990773084,
+        "GBP":0.5766690832,"RON":3.1911289791,
+        "SEK":7.1655572398,"IDR":11121.7293877282,
+        "INR":54.2845844592,"BRL":3.9628287089,
+        "RUB":52.9882686351,"HRK":4.9774599618,
+        "JPY":76.596586041,"THB":23.0870625453,
+        "CHF":0.6936663811,"EUR":0.6590654452,
+        "MYR":3.1037369011,"BGN":1.2890001977,
+        "TRY":4.9670467277,"CNY":5.0388848613,
+        "NOK":7.5650827127,"NZD":1.1857246425,
+        "ZAR":13.5120938509,"USD":0.7117906808,
+        "MXN":17.6847689976,"SGD":1.0146971594,
+        "AUD":1.1166545838,"ILS":2.5034600936,
+        "KRW":878.2640216173,"PLN":2.984511962
+    </string>
+    <string name="fxsymbols">
+        CAD,HKD,ISK,PHP,DKK,HUF,CZK,GBP,
+RON,SEK,IDR,INR,BRL,RUB,HRK,JPY,
+THB,CHF,EUR,MYR,BGN,TRY,CNY,NOK,
+NZD,ZAR,USD,MXN,SGD,AUD,ILS,KRW,PLN
+    </string>
+</resources>
