@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CBD1AA"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/subcatimage"
+            android:src="@drawable/markus"
+            android:paddingLeft="5dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/subcat_desc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="45"
+        android:ellipsize="end"
+        android:lines="1"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="description"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="15"
+        android:paddingLeft="0dp"
+        android:paddingTop="15dp"
+        android:text="CAD"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:id="@+id/subcat_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="amount"
+            android:textAlignment="viewEnd"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/subcat_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:text="change"
+            android:textAlignment="viewEnd"
+            android:textColor="#C10C0C"
+            android:textSize="8sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</LinearLayout>

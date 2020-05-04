@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Arraylist methods</string>
+    <string-array name="spinner_selection">
+        <item>All</item>
+        <item>Summary by categories</item>
+        <item>Summary by Subcategories</item>
+        <item>Summary by currency</item>
+    </string-array>
+    <string name="hello">hello</string>
+    <string name="test_data">Category,Subcategory,Description,Country,CCY,Amount,:
+Cash,OCBC,Premier-Jt,MY,MYR,1375914,:
+Cash,Kenanga,OCR-MTN,MY,MYR,1000000,:
+Cash,UOB,Investpro,MY,MYR,516056,:
+Cash,Kenanga,Datasonic,MY,MYR,500000,:
+Securities,FSM,Bonds,MY,MYR,501830,:
+Cash,UOB,FD1,MY,MYR,450000,:
+Cash,UOB,FD2,MY,MYR,400000,:
+Cash,UOB,FD3,MY,MYR,400000,:
+Securities,UOB,Funds,MY,MYR,337739,:
+Cash,RHB,FD,MY,MYR,250000,:
+Cash,Kenanga,KYS-MTN,MY,MYR,250000,:
+Cash,Kenanga,711-MTN,MY,MYR,250000,:
+Cash,RHB,FD_MM2H,MY,MYR,150000,:
+Cash,RHB,Premier-Jt,MY,MYR,149964,:
+Real Estate,Real Estate,Condo,MY,MYR,133000,:
+Securities,RHB,Securities-mm,MY,MYR,70628,:
+Cash,RHB,FD-pledge,MY,MYR,50000,:
+Cash,OCBC,CCPledgemm,MY,MYR,50000,:
+Cash,OCBC,CCPledgeyy,MY,MYR,50000,:
+Securities,FSM,Funds,MY,MYR,50756,:
+Cash,RHB,TradingCashmm,MY,MYR,3526,:
+Cash,OCBC,Premier-mm,MY,MYR,1222,:
+Cash,RHB,BonusAccount,MY,MYR,1201,:
+Cash,RHB,Smart-mm,MY,MYR,849,:
+Cash,FSM,Cash,MY,MYR,752,:
+Securities,RHB,Securities-yy,MY,MYR,500,:
+Cash,RHB,MCA,MY,SGD,50,:
+Cash,RHB,TradingCashyy,MY,MYR,0,:
+Securities,Misc,Schwab,MY,USD,30000,:
+Securities,Misc,FX Trading,MY,USD,11000,:
+Cash,UBS,Mgd-Liquidity,CH,CHF,371443,:
+Securities,UBS,Mgd-Securities,CH,CHF,580373,:
+Cash,UBS,Liquidities,CH,CHF,392335,:
+Securities,UBS,Securities,CH,CHF,233381,:
+Pension and Insurance,PFS,PFS mm,CH,CHF,1751000,:
+Pension and Insurance,PFS,PFS yy,CH,CHF,109868,:
+Pension and Insurance,PFS,PFS WHT est,CH,CHF,-223304,:
+Securities,HSBC,SecCAD,CA,CAD,911113,:
+Securities,HSBC,SecUSD,CA,USD,41888,:
+Cash,HSBC,CA-HRSCAD,CA,CAD,20340,:
+Cash,HSBC,CA-CashCAD,CA,CAD,8000,:
+Cash,HSBC,ID-CashCAD,CA,CAD,1134,:
+Cash,HSBC,ID-CashUSD,CA,USD,111,:
+Securities,TD,TFSA-mm,CA,CAD,85682,:
+Securities,TD,SDRSP-mm,CA,CAD,60417,:
+Securities,TD,TFSA-yy,CA,CAD,85760,:
+Securities,TD,SDRSP yy,CA,CAD,11837,:
+Cash,TD,CashCAD,CA,CAD,11297,:
+Cash,TD,CashUSD,CA,USD,5496,:
+Securities,HSBC,HK-Securities,HK,HKD,3807704,:
+Pension and Insurance,HSBC,HK-Insurance,HK,USD,145800,:
+Cash,HSBC,HK-cash,HK,HKD,99011,:
+Cash,HSBC,China-mm,HK,CNY,309770,:
+Cash,HSBC,China-yy,HK,CNY,87969,:
+Real Estate,Real Estate,ElliscombeRd,UK,GBP,700000,:
+Family,Markus,Cowgatehead,Misc,GBP,180000,:
+Family,Markus,Barcays-SO,Misc,GBP,3000,:
+Family,Markus,Inher. 18/19,Misc,CAD,-100000,:
+Pension and Insurance,Misc,Ultimate,UK,GBP,55914,:
+Pension and Insurance,Misc,Ultimate,UK,GBP,36639,:
+Cash,Misc,Barclays,UK,GBP,25470,:
+Cash,Misc,NS Income Bonds,UK,GBP,7000,:
+Pension and Insurance,Misc,CanadaLife,UK,GBP,6000,:
+Securities,Misc,Kraken mm,Misc,USD,10453,:
+Securities,Misc,Kraken yy,Misc,CAD,19143,:
+Family,Philip,TokyoHouse,Misc,JPY,39000000,:
+Family,Philip,MTBC-Cash,Misc,JPY,1000000,:
+Family,Philip,USD-loan,Misc,USD,50000,:
+Family,Philip,Inher. 18/19,Misc,CAD,-100000,:
+
+
+
+</string>
+    <string name="fx">{"rates":{"CAD":1.0,"HKD":
+        5.5167732156,"ISK":104.5277796085,"PHP":
+        36.1767613524,"DKK":4.9151123707,"HUF":
+        234.0934554801,"CZK":17.9990773084,"GBP":
+        0.5766690832,"RON":3.1911289791,"SEK":
+        7.1655572398,"IDR":11121.7293877282,"INR":
+        54.2845844592,"BRL":3.9628287089,"RUB":
+        52.9882686351,"HRK":4.9774599618,"JPY":
+        76.596586041,"THB":23.0870625453,"CHF":
+        0.6936663811,"EUR":0.6590654452,"MYR":
+        3.1037369011,"BGN":1.2890001977,"TRY":
+        4.9670467277,"CNY":5.0388848613,"NOK":
+        7.5650827127,"NZD":1.1857246425,"ZAR":
+        13.5120938509,"USD":0.7117906808,"MXN":
+        17.6847689976,"SGD":1.0146971594,"AUD":
+        1.1166545838,"ILS":2.5034600936,"KRW":
+        878.2640216173,"PLN":2.984511962},
+        "base":"CAD","date":"2020-04-24"}</string>
+</resources>

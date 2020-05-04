@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="#C9E4A8"
+    android:id="@+id/itemview_layout"
+
+    android:weightSum="100">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="40dp"
+        android:id="@+id/circleimage"
+        android:src="@drawable/redbutton"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc_text"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_toRightOf="@+id/circleimage"
+        android:layout_centerVertical="true"
+        android:lines="1"
+        android:text="description"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="15"
+        android:layout_height="wrap_content"
+        android:id="@+id/ccy_text"
+        android:layout_gravity="center_vertical"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:textColor="#000"
+        android:layout_toLeftOf="@id/amount_text"
+        android:layout_centerVertical="true"
+        android:text="ccy"
+        android:paddingLeft="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="25"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:layout_height="0dp"
+            android:id="@+id/amount_text"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textAlignment="viewEnd"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="amount"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="40"
+            android:layout_height="0dp"
+            android:id="@+id/amountdiff_text"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:textColor="#DD0303"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="viewEnd"
+            android:text="change"
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

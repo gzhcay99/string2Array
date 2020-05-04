@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:background="#EAC3EC"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:padding="1dp">
+
+            <Spinner
+                android:id="@+id/spinnerSUM"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:text="Total CAD"
+                android:textAlignment="viewEnd"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/total_amount"
+                android:textStyle="bold|italic"
+                android:textColor="#22211F"
+                android:textAlignment="viewEnd"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_weight="30"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_gravity="top"
+            android:padding="1dp">
+
+            <Button
+                android:id="@+id/btnRefreshFX"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#ddffffff"
+                android:src="@drawable/kpm3"
+                android:text="fx"
+                android:layout_weight="20"
+                />
+            <TextView
+                android:id="@+id/tvSubtot_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:text="Sub-Total in CAD"
+                android:textSize="10sp"
+                android:layout_gravity="right"
+                android:paddingLeft="100dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/subtotal_amount"
+                android:textSize="10sp"
+                android:textStyle="bold|italic"
+                android:textColor="#E4190A"
+                android:textAlignment="viewEnd"
+                android:paddingRight="10dp"
+                android:layout_weight="30"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:id="@+id/recylcer_view2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="7"
+            android:paddingLeft="10dp"
+            android:background="@color/cardview_light_background"
+            android:weightSum="10"
+            >
+
+            <Spinner
+                android:id="@+id/spinnerCat"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+            <Spinner
+                android:id="@+id/spinnerSubcat"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4" />
+            <Spinner
+                android:id="@+id/spinnerCcy"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/total_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnRefreshFX"
+            android:ellipsize="end"
+            android:paddingLeft="5dp"
+            android:text="Text"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</layout>
