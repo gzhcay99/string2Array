@@ -105,17 +105,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="2dp"
+        android:padding="10dp"
         android:weightSum="100">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Category"
             android:layout_weight="35"
-            android:layout_gravity="center_vertical"
-            android:textSize="12sp"            />
+            android:textSize="16sp"            />
 
         <EditText
 
@@ -125,24 +124,22 @@
             android:layout_weight="65"
             android:text="something"
             android:background="#F6F1F1"
-            android:layout_gravity="center_vertical"
-            android:textSize="12sp"
+            android:textSize="16sp"
             android:paddingLeft="20dp"/>
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="2dp"
+        android:padding="10dp"
         android:weightSum="100">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Subcategory"
             android:layout_weight="35"
-            android:layout_gravity="center_vertical"
-            android:textSize="12sp"            />
+            android:textSize="16sp"            />
 
         <EditText
 
@@ -152,24 +149,22 @@
             android:layout_weight="65"
             android:text="something"
             android:background="#F6F1F1"
-            android:layout_gravity="center_vertical"
-            android:textSize="12sp"
+            android:textSize="16sp"
             android:paddingLeft="20dp"/>
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="2dp"
+        android:padding="10dp"
         android:weightSum="100">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Description"
             android:layout_weight="35"
-            android:layout_gravity="center_vertical"
-            android:textSize="12sp"            />
+            android:textSize="16sp"            />
 
         <EditText
 
@@ -179,24 +174,22 @@
             android:layout_weight="65"
             android:text="something"
             android:background="#F6F1F1"
-            android:layout_gravity="center_vertical"
-            android:textSize="12sp"
+            android:textSize="16sp"
             android:paddingLeft="20dp"/>
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="2dp"
+        android:padding="10dp"
         android:weightSum="100">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Country"
             android:layout_weight="35"
-            android:layout_gravity="center_vertical"
-            android:textSize="12sp"            />
+            android:textSize="16sp"            />
 
         <EditText
 
@@ -206,24 +199,22 @@
             android:layout_weight="65"
             android:text="something"
             android:background="#F6F1F1"
-            android:layout_gravity="center_vertical"
-            android:textSize="12sp"
+            android:textSize="16sp"
             android:paddingLeft="20dp"/>
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="2dp"
+        android:padding="10dp"
         android:weightSum="100">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Currency"
             android:layout_weight="35"
-            android:layout_gravity="center_vertical"
-            android:textSize="12sp"            />
+            android:textSize="16sp"         />
 
         <EditText
 
@@ -233,24 +224,24 @@
             android:layout_weight="65"
             android:text="something"
             android:background="#F6F1F1"
-            android:layout_gravity="center_vertical"
-            android:textSize="12sp"
+            android:textSize="16sp"
             android:paddingLeft="20dp"/>
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="2dp"
+        android:padding="10dp"
         android:weightSum="100">
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Amount"
             android:layout_weight="35"
-            android:layout_gravity="center_vertical"
-            android:textSize="12sp"            />
+            android:textSize="16sp"
+            />
 
         <EditText
 
@@ -260,17 +251,18 @@
             android:layout_weight="65"
             android:text="something"
             android:background="#F6F1F1"
-            android:layout_gravity="center_vertical"
-            android:textSize="12sp"
+            android:textSize="16sp"
             android:paddingLeft="20dp"/>
 
     </LinearLayout>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_upload"
-        android:text="UPDATE"
+        android:text="UPDATE and SAVE"
         />
     <Button
         android:layout_width="match_parent"
@@ -282,7 +274,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnSave"
-        android:text="SAVE"/>
+        android:text="REFRESH"
+        android:visibility="gone"
+        />
 
     <Button
         android:layout_width="match_parent"

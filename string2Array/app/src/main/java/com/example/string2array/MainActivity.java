@@ -89,8 +89,15 @@ public class MainActivity extends AppCompatActivity implements recycleradapter.O
                         m.setDescription(etdesc.getText().toString());
                         m.setCountry(etcountry.getText().toString());
                         m.setCurrency(etccy.getText().toString().trim());
-                        m.setAmount(etamt.getText().toString());
+                        String amt=etamt.getText().toString();
+                        amt=amt.replace(",","");
+                        m.setAmount(amt);
                         models.set(positionID, m);
+                        String dataString = convertModelstoString(models);
+                        String fxString = convertFXMAPtoSTring(fxmap);
+                        if(date.equals("")){date="2020-4-30";};
+                        saveToFirebase("Current",
+                                dataString,fxString,date);
                         clearFields();
                         refresh();
                         changeVisibility();
@@ -136,16 +143,21 @@ public class MainActivity extends AppCompatActivity implements recycleradapter.O
                 changeVisibility();
             }
         });
+
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                initialise();
+                /*
                 String dataString = convertModelstoString(models);
                 String fxString = convertFXMAPtoSTring(fxmap);
-                if(date.equals("")){date="2020-4-20";};
+                if(date.equals("")){date="2020-4-30";};
                 saveToFirebase("Current",
                         dataString,fxString,date);
                 changeVisibility();
                 refresh();
+
+                 */
             }
         });
 
@@ -182,7 +194,8 @@ public class MainActivity extends AppCompatActivity implements recycleradapter.O
         grandsum=arrayUtil.sumArray(models,fxmap);
         tvtotal.setText(NumberFormat.floatNo(grandsum));
         Float diff=grandsum-oldGrandsum;
-        tvchange.setText(NumberFormat.floatNo(diff));
+        tvchange.setText(NumberFormat.changefloatNo(diff));
+        if(diff>=0){tvchange.setTextColor(Color.BLUE);}else{tvchange.setTextColor(Color.RED);};
         difference=computeArrayDifference();
         display();
     }
@@ -221,16 +234,12 @@ public class MainActivity extends AppCompatActivity implements recycleradapter.O
 
                models=arrayUtil.convertS(dataString);
                fxmap=convertStringtoMap(fxString);
-               grandsum=arrayUtil.sumArray(models, fxmap);
+
                tvtotal.setText(NumberFormat.floatNo(grandsum));
                archivedmodels=arrayUtil.convertS(olddataString);
                archivedfxmap=convertStringtoMap(oldfxString);
                oldGrandsum=arrayUtil.sumArray(archivedmodels, archivedfxmap);
-               diff = grandsum-oldGrandsum;
-               tvchange.setText(NumberFormat.changefloatNo(diff));
-               if(diff>0){tvchange.setTextColor(Color.BLACK);}
-               difference=computeArrayDifference();;
-               display();
+               refresh();
             }
 
             @Override
